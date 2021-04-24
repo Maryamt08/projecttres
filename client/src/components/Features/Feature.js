@@ -6,13 +6,14 @@ import cardInfo from "./CardInfo";
 const Feature = () => {
    
     return (
-    <section  className="login1">
+    <section  className="featured">
         <div className="container-fluid containerColor">
             <div className="row">
+            <div className="featured-title"> <h2>Featured Nail Technicians</h2> </div>
                 <div className="marginBottomCol">
                     <div className="card-transparent">
                         <div className="card-body mt-5">
-                            <div className="featured-title"> <h2>Featured Nail Technicians</h2> </div>
+                            
                             <br />
                             
                             <div className="row row-cols-1 rows-cols-md-3">
@@ -31,8 +32,10 @@ const Feature = () => {
                 </div>
             </div>
         </div>
+        <footer/>
     
     </section>
+    
     );
 }
 
