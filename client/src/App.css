@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Prata&display=swap');
+
+/******  FONTS *******/ 
+body{
+  font-family: 'Tangerine', serif;
+}
+
+/* ********** NAVBAR **********/
+
+nav{
+    z-index: 2;
+    height: 13rem;
+    
+}
+.container{
+    flex-direction: column;
+}
+
+.navbar{
+    background-color:#570f17;
+    
+  
+}
+
+.navbar-title{
+  font-size: 7rem;
+  color:white;
+}
+
+.navbar-tagline{
+  font-family: 'Orelega One', cursive;
+  font-family: 'Prata', serif;
+  font-size: 1.6rem;
+  background-color: pink;
+  color: maroon;
+  font-style: italic;
+  width: 32rem;
+  height: 2rem;
+  position: relative;
+  bottom: 0px;
+  margin-top: 5px;
+  border-radius: 15px;
+}
+
+
+.te{
+    position: absolute;
+    color: white;
+    text-align:center;
+  font-family: 'Sacramento', cursive;
+  /*text-shadow: 4px 4px 4px #aaa;*/   
+  bottom: 0px;
+  margin: 0px;
+}
+/* MENU */
+
+nav a.nav-link{
+    padding: 5%;
+    font-weight: 100;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Prata', serif;
+  }
+
+.collapse-navbar-collapse, .collapse{     /*come back to this part*/
+  justify-content: flex-end;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  font-size: 12px;;
+}
+
+.navbar-toggler{                        /*behind nailed it title*/
+  padding: 1.5rem 1rem;
+}
+
+
+
+nav ul li {
+    text-transform: uppercase;
+   color:white;
+  }
+
+  .navbar-brand {
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 6rem !important;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+      width: 7rem;
+    }
+  }
+
+ 
+
+  .navbar-nav > li > a.active, 
+.navbar-nav > li > a:focus {
+    color: white;
+    border-bottom: 0.15rem solid rgb(6, 24, 58);
+
+
+}
+
+
+.navbar-nav > li > a:hover {
+  text-align: center;
+  color: rgb(100, 5, 5);
+  background:pink;
+  /*font-size: 2rem;*/
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 175px;
+  /*margin-bottom: 20px;*/
+  /*text-decoration: none;*/
+  font-family: 'Orelega One', cursive;
+  font-family: 'Prata', serif;
+   }
+
+/******* HEADER **************/
+
+   .header-wraper {
+    
+    background: url(background4.jpg) no-repeat;
+    width:100vw;
+    background-size: cover;
+   opacity: 60%;
+    height: 100vh;
+    position: relative;
+  }
+
+
+
+.main-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+   
+  }
+
+.slideshow{
+  /*margin: 0 auto;*/
+  margin-top: 200px;
+  overflow: hidden;
+  width: 50rem;
+  height: 33rem;
+  display: block;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 30rem;
+  width: 100%;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: rosybrown;
+}
+
+.slideshowDot.active {
+  background-color: pink;
+}
+
+
+ 
+  /*a.btn-main-offer {
+    color: rgb(100, 5, 5);
+    background:white;
+    font-size: 2rem;
+    font-size: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Prata', serif;
+   }*/
+
+
+  
+  
+
+  /* ********************** Footer ************************ */
+
+.footer {
+   background: rgb(36, 31, 34);
+    padding: 4rem;
+    color:white;
+    height:auto;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .footer a:hover{
+    text-decoration: none;
+    color: maroon;
+    cursor: pointer;
+  
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+   /********************LOGIN****************/
+
+   /* .text-center{
+     background-color: rgb(236, 150, 45);
+     text-align: center;
+   } */
+  
+   .login1{
+    /*width:100%;
+     margin-top: 150px;
+    min-height: 600px;
+     background: url(./background4.jpg);
+     background-size: cover;
+     fill-opacity: inherit;
+     text-align: center;
+     padding: 100px 200px;
+     margin-bottom: 0px;
+     color: white;*/
+
+     background: url(background4.jpg) no-repeat;
+     width: 100vw;
+     background-size: cover;
+    opacity: 80%;
+     height: 100vh;
+     position: relative;
+     font-family: 'Orelega One', cursive;
+     font-family: 'Prata', serif;
+     align-items: center;
+     justify-content: center;
+       }
+
+.featured-title{
+  margin-top: 5rem;
+  text-align: center;
+  width: 65rem;
+  height: 6rem;
+}
+
+.featured-title > h2{
+  display: inline-block;
+  position: absolute;
+  font-size: 5rem;
+  justify-content: center;
+  background-color: white;
+
+}
+
+
+.card{
+  height: 100rem;
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+  margin-bottom:3%;
+  
+}
+
+   .card-title{
+     margin-top: .5rem;
+     font-size: 1.5rem;
+   }
+
+   .row{
+     margin-top: 8rem;
+     margin-bottom: 5rem;
+   }
+
+
+
+   /*******REGISTER*********/
+
+
+   span{
+     
+    font-size: 30px;
+    letter-spacing: 3px;
+   
+  }
+
+  .reg-text{
+    margin: 20px 50px;
+  }
+
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+/* Set a style for all buttons */
+.button1 {
+  background-color: #e95c1b;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+
+.button1{
+
+  animation: animate 8s linear infinite;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  /*border-radius: 40px;*/
+  z-index: 1; 
+ }
+  .button:hover {
+  animation: animate 8s linear infinite;
+ }
+ @keyframes animate {
+  0% {
+   background-position: 0%;
+  }
+  100% {
+   background-position: 400%;
+  }
+ }
+ .button:before {
+  content: '';
+  /*position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;*/
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s;
+ }
+ .button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+ }
+
+ .card-title{
+   color:black;
+   
+ }
+ /* section{
+  width: 100%;
+  height:100vh;
+  margin-top: 150px;
+  min-height: 600px;
+  background: #272629;
+  background-size: cover;
+  background-repeat: none;
+  color:white;
+ } */
+
+/**********  CARD ************/
+
+.card-foot{
+  border: 1px solid #de69e2;
+  background-color: rgb(126, 33, 33);
+  border-radius: 20px;
+  margin-right: 10px;
+  color: white;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+/*.card-title{
+  margin-bottom: 10%;
+}*/
+
+
+
+
+
+
+
+  
