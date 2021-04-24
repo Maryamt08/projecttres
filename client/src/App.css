@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Prata&display=swap');
 
 /******  FONTS *******/ 
+
 body{
-  font-family: 'Tangerine', serif;
+  background: url(background4.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
 }
 
 /* ********** NAVBAR **********/
@@ -31,15 +34,15 @@ nav{
 .navbar-tagline{
   font-family: 'Orelega One', cursive;
   font-family: 'Prata', serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background-color: pink;
-  color: maroon;
+  color: #570f17;
   font-style: italic;
-  width: 32rem;
+  width: 35rem;
   height: 2rem;
   position: relative;
   bottom: 0px;
-  margin-top: 5px;
+  margin-top: 4px;
   border-radius: 15px;
 }
 
@@ -70,7 +73,7 @@ nav a.nav-link{
   position: absolute;
   right: 5px;
   top: 7px;
-  font-size: 12px;;
+  font-size: 18px;
 }
 
 .navbar-toggler{                        /*behind nailed it title*/
@@ -126,9 +129,7 @@ nav ul li {
 
 /******* HEADER **************/
 
-   .header-wraper {
-    
-    background: url(background4.jpg) no-repeat;
+   .header-wrapper {
     width:100vw;
     background-size: cover;
    opacity: 60%;
@@ -140,7 +141,7 @@ nav ul li {
 
 .main-info {
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     right: 0;
@@ -221,30 +222,7 @@ nav ul li {
 
   /* ********************** Footer ************************ */
 
-.footer {
-   background: rgb(36, 31, 34);
-    padding: 4rem;
-    color:white;
-    height:auto;
-  }
-  
-  .footer a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-  }
-  
-  .footer a:hover{
-    text-decoration: none;
-    color: maroon;
-    cursor: pointer;
-  
-  }
-  
-  .footer p {
-    margin-bottom: 0;
-    font-size: 1rem;
-  }
+
    /********************LOGIN****************/
 
    /* .text-center{
@@ -252,7 +230,7 @@ nav ul li {
      text-align: center;
    } */
   
-   .login1{
+   .featured{
     /*width:100%;
      margin-top: 150px;
     min-height: 600px;
@@ -263,56 +241,60 @@ nav ul li {
      padding: 100px 200px;
      margin-bottom: 0px;
      color: white;*/
-
-     background: url(background4.jpg) no-repeat;
-     width: 100vw;
+   
+     background-color: pink;
      background-size: cover;
-    opacity: 80%;
-     height: 100vh;
-     position: relative;
      font-family: 'Orelega One', cursive;
      font-family: 'Prata', serif;
-     align-items: center;
-     justify-content: center;
+     
        }
 
+
 .featured-title{
-  margin-top: 5rem;
+  margin-top: 12%;
   text-align: center;
-  width: 65rem;
   height: 6rem;
+  margin-left: 29%;
+  justify-content: center;
+  border: solid #570f17;
 }
 
 .featured-title > h2{
-  display: inline-block;
-  position: absolute;
   font-size: 5rem;
-  justify-content: center;
-  background-color: white;
+  color:#570f17;
 
 }
 
 
 .card{
-  height: 100rem;
-  width: 60rem;
-  display: flex;
-  justify-content: center;
-  margin-left: 25%;
-  margin-bottom:3%;
-  
+  color: black;
+  height: 90%;
+  width: 70%;
+  margin-left: 15%;
 }
 
-   .card-title{
-     margin-top: .5rem;
-     font-size: 1.5rem;
+
+
+.card-title{
+  margin-top: .5rem;
+  font-size: 3rem;
+  background-color: pink;
+  width: 100%;
+  border: solid #570f17;
+  color: black;
+  font-style: italic;
+
    }
 
-   .row{
-     margin-top: 8rem;
-     margin-bottom: 5rem;
-   }
+.card-salon{
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+
+.col-xs-12{
+     margin-bottom: 2%;
+   }
 
 
    /*******REGISTER*********/
@@ -375,6 +357,7 @@ button:hover {
    background-position: 400%;
   }
  }
+ 
  .button:before {
   content: '';
   /*position: absolute;
@@ -390,16 +373,13 @@ button:hover {
   opacity: 0;
   transition: 0.5s;
  }
+
  .button:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
  }
 
- .card-title{
-   color:black;
-   
- }
  /* section{
   width: 100%;
   height:100vh;
@@ -414,23 +394,46 @@ button:hover {
 /**********  CARD ************/
 
 .card-foot{
-  border: 1px solid #de69e2;
-  background-color: rgb(126, 33, 33);
-  border-radius: 20px;
-  margin-right: 10px;
-  color: white;
-  margin-bottom: 5%;
-  margin-top: 3%;
+  border: solid #570f17;  
+  background-color: pink;
+  border-radius: 10px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
 }
+
 
 /*.card-title{
   margin-bottom: 10%;
 }*/
 
 
+.footer {
+  background: rgb(36, 31, 34);
+   color:white;
+   z-index: 2;
+   height: 13rem;
+  }
 
-
-
-
+ 
+ .footer a {
+   text-decoration: none;
+   /*color: white;*/
+   font-size: 1rem;
+ }
+ 
+ .footer a:hover{
+   text-decoration: none;
+   color: maroon;
+   cursor: pointer;
+ 
+ }
+ 
+ .footer p {
+   margin-bottom: 0;
+   font-size: 1rem;
+ }
 
   
