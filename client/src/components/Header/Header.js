@@ -1,11 +1,17 @@
 import React from "react";
+import Slideshow from "../Slideshow/Slideshow";
+
 //import Typed from "react-typed";
 import {Link} from "react-scroll";
 ////import "./Header.css";
 const Header = () => {
     return (
+
+        
        <div id="home" className="header-wraper" >
            <div className="main-info">
+            
+           
                
                {/* <Typed
                className="typed-text"
@@ -16,8 +22,9 @@ const Header = () => {
                /> */}
             {/* <Link smooth={true} to="SignIn" offset={-110} className="btn-main-offer">Log In</Link> */}
            </div>
-
+           <Slideshow/>
        </div>
+        
     )
 }
 

@@ -1,6 +1,6 @@
-import slide0 from "../../slide_0.jpg";
+/*import slide0 from "../../slide_0.jpg";
 import slide1 from "../../slide_1.jpg";
-import slide2 from "../../slide_2.jpg";
+import slide2 from "../../slide_2.jpg";*/
 
 
 const CardInfo = [

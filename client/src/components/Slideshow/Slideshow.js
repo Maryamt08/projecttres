@@ -1,10 +1,8 @@
 import React from "react";
 
-import {Link} from "react-scroll";
 
 
-
-const bgImagePaths = ['../../im', "../../images/slide_1.jpg", '../../images/slide_2.jpg'];
+const bgImagePaths = [('../../images/slide_0.jpg', '../../images/slide_1.jpg', '../../images/slide_2.jpg')];
 const delay = 4000;
 
 export function Slideshow() {

@@ -37,15 +37,8 @@ function Register() {
   return (
     <section>
     <div className="login1">
-      <div className="container reg-text">
-        <span style={{color: '#FF0000'}}>R</span>
-        <span style={{color: '#66CC66'}}>E</span>
-        <span style={{color: '#FF9966'}}>G</span>
-        <span style={{color: '#eff0f7'}}>I</span>
-        <span style={{color: '#FF0066'}}>S</span>
-        <span style={{color: '#FF0000'}}>T</span>
-        <span style={{color: '#66CC66'}}>E</span>
-        <span style={{color: '#FF9966'}}>R</span>
+      <div className="container">
+        <span className="registertitle">REGISTER</span>
         </div> 
       <form onSubmit={register}>
         <div className="form-group col-sm-2 col-md-4 text-left">
