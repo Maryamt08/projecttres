@@ -1,4 +1,5 @@
 import React from "react";
+import Slideshow from "../src/components/Slideshow/Slideshow";
 //import Particles from "react-particles-js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
@@ -31,6 +32,7 @@ function App() {
                         url: 'path/to/svg.svg'
                     }
                 }} /> */}
+                <Slideshow/>
         <Navbar />
          {/* <Route exact path="/" component={Header} />
         <Route exact path="/home" component={Header} />
@@ -39,6 +41,7 @@ function App() {
         <Route exact path="/account" component={Account} />
         <Route path="/about" component={About} /> 
         <Route path="/login" component={LoginForm} />   */}
+        
         
         <Route exact path="/" component={Header} />
         <Route exact path="/home" component={Header} />

@@ -156,14 +156,16 @@ nav ul li {
 
 .slideshow{
   /*margin: 0 auto;*/
-  margin-top: 200px;
+  margin-top: 55%;
+  margin-left: 100%;
   overflow: hidden;
   width: 50rem;
   height: 33rem;
-  display: block;
+  display: inline-block;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+  background-color: green;
 }
 
 .slideshowSlider {
@@ -172,9 +174,7 @@ nav ul li {
 }
 
 .slide {
-  display: inline-block;
-  height: 30rem;
-  width: 100%;
+  display: block;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
@@ -184,6 +184,7 @@ nav ul li {
 
 .slideshowDots {
   text-align: center;
+  margin-top: 60%;
 }
 
 .slideshowDot {
@@ -271,6 +272,7 @@ nav ul li {
   height: 90%;
   width: 70%;
   margin-left: 15%;
+  border:solid #570f17;
 }
 
 
@@ -283,7 +285,6 @@ nav ul li {
   border: solid #570f17;
   color: black;
   font-style: italic;
-
    }
 
 .card-salon{
@@ -397,11 +398,11 @@ button:hover {
   border: solid #570f17;  
   background-color: pink;
   border-radius: 10px;
-  margin-right: 80px;
-  margin-left: 80px;
+  margin-right: 100px;
+  margin-left: 100px;
   margin-top: 15px;
-  margin-bottom: 15px;
   color: black;
+  font-size: 20px;
 }
 
 
@@ -414,7 +415,8 @@ button:hover {
   background: rgb(36, 31, 34);
    color:white;
    z-index: 2;
-   height: 13rem;
+   height: 15rem;
+   flex-direction: column;
   }
 
  

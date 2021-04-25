@@ -9,7 +9,7 @@ const Projects = (props) => {
                
                 <div className="card-body text-center cardBodyBorder">
                     <h4 className="card-title">{props.name}</h4>
-                    <h7 className="card-title">{props.salon_name}</h7>
+                    <h7 className="card-salon">{props.salon_name}</h7>
                 </div>
 
                 <div className="embed-responsive embed-responsive-4by3">
