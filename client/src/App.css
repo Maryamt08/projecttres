@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Prata&display=swap');
 
 /******  FONTS *******/ 
-
 body{
-  background: url(background4.jpg) no-repeat;
-  background-size: cover;
-  position: absolute;
+  /* font-family: 'Tangerine', serif; */
+  background: #fff;
 }
 
 /* ********** NAVBAR **********/
 
 nav{
     z-index: 2;
-    height: 13rem;
+
     
 }
 .container{
@@ -22,42 +20,62 @@ nav{
 
 .navbar{
     background-color:#570f17;
-    
+    height: 10vh;
   
 }
 
 .navbar-title{
-  font-size: 7rem;
-  color:white;
+  font-size: 4rem;
+  color:white!important;
 }
-
+.typed-text span{
+  color: #ffffff;
+}
 .navbar-tagline{
   font-family: 'Orelega One', cursive;
   font-family: 'Prata', serif;
-  font-size: 1.8rem;
-  background-color: pink;
-  color: #570f17;
+  font-size: 1.6rem;
+  background-color: rosybrown;
+  color: maroon;
   font-style: italic;
-  width: 35rem;
-  height: 2rem;
+
   position: relative;
   bottom: 0px;
-  margin-top: 4px;
+  margin-top: 5px;
   border-radius: 15px;
 }
 
 
-.te{
-    position: absolute;
-    color: white;
-    text-align:center;
+.fixed-top {
+
+  z-index: 999999999!important;
+}
+.containerAnimated{
+  position: absolute;
+  color: aliceblue;
+  text-align: center;
   font-family: 'Sacramento', cursive;
-  /*text-shadow: 4px 4px 4px #aaa;*/   
-  bottom: 0px;
   margin: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 99999999;
+  opacity: 100%;
 }
 /* MENU */
-
+.containerChildAnimated {
+  flex-direction: column;
+  background: #570f17;
+  width: 40%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.4);
+  display: flex;
+  border: 10px solid #fff;
+}
 nav a.nav-link{
     padding: 5%;
     font-weight: 100;
@@ -68,29 +86,20 @@ nav a.nav-link{
     font-family: 'Prata', serif;
   }
 
-.collapse-navbar-collapse, .collapse{     /*come back to this part*/
-  justify-content: flex-end;
-  position: absolute;
-  right: 5px;
-  top: 7px;
-  font-size: 18px;
-}
-
-.navbar-toggler{                        /*behind nailed it title*/
-  padding: 1.5rem 1rem;
-}
 
 
 
 nav ul li {
     text-transform: uppercase;
    color:white;
+   padding: 0 1rem;
+   font-size: .9rem!important;
   }
 
   .navbar-brand {
-    max-width: 17.25rem;
+    /* max-width: 17.25rem; */
     padding: 0 !important;
-    height: 6rem !important;
+
   }
 
 
@@ -103,69 +112,55 @@ nav ul li {
 
  
 
-  .navbar-nav > li > a.active, 
-.navbar-nav > li > a:focus {
-    color: white;
-    border-bottom: 0.15rem solid rgb(6, 24, 58);
 
 
-}
 
 
-.navbar-nav > li > a:hover {
-  text-align: center;
-  color: rgb(100, 5, 5);
-  background:pink;
-  /*font-size: 2rem;*/
-  font-size: 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  width: 175px;
-  /*margin-bottom: 20px;*/
-  /*text-decoration: none;*/
-  font-family: 'Orelega One', cursive;
-  font-family: 'Prata', serif;
-   }
 
 /******* HEADER **************/
 
-   .header-wrapper {
-    width:100vw;
+   .header-wraper {
+    
+    background: url(assets/background4.jpg) no-repeat;
     background-size: cover;
-   opacity: 60%;
-    height: 100vh;
-    position: relative;
+    position: absolute;
+    opacity: 60%;
+    height: 90vh;
+    width: 100%;
   }
-
 
 
 .main-info {
     display: flex;
-    /*position: absolute;*/
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    z-index: 1;
    
   }
-
+  .containerBody{
+    position: relative;
+    height: 90vh;
+    margin-top: 10vh;
+    width: 100%;
+  }
+  
 .slideshow{
   /*margin: 0 auto;*/
-  margin-top: 20%;
-  margin-left: 35%;
+  margin-top: 200px;
   overflow: hidden;
   width: 50rem;
-  height: 33rem;
-  display: inline-block;
+
+  display: block;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  background-color: pink;
 }
 
 .slideshowSlider {
@@ -174,7 +169,9 @@ nav ul li {
 }
 
 .slide {
-  display: block;
+  display: inline-block;
+
+  width: 100%;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
@@ -184,7 +181,6 @@ nav ul li {
 
 .slideshowDots {
   text-align: center;
-  margin-top: 60%;
 }
 
 .slideshowDot {
@@ -198,7 +194,7 @@ nav ul li {
 }
 
 .slideshowDot.active {
-  background-color: pink;
+  background-color: maroon;
 }
 
 
@@ -223,118 +219,70 @@ nav ul li {
 
   /* ********************** Footer ************************ */
 
-
+.footer {
+   background: #570f17;
+    padding: 4rem;
+    color:white;
+    height:auto;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Prata';
+  }
+  
+  .footer a:hover{
+    text-decoration: none;
+ 
+    cursor: pointer;
+  
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-family: 'Prata';
+  }
    /********************LOGIN****************/
 
    /* .text-center{
      background-color: rgb(236, 150, 45);
      text-align: center;
    } */
-  
-   .featured{
-    /*width:100%;
-     margin-top: 150px;
-    min-height: 600px;
-     background: url(./background4.jpg);
+  body{
+    background: white!important;
+  }
+   .login1{
+    width:100%;
+     /* background: url(./assets/background3.jpg);
      background-size: cover;
      fill-opacity: inherit;
      text-align: center;
      padding: 100px 200px;
-     margin-bottom: 0px;
-     color: white;*/
-   
-     background-color: pink;
-     background-size: cover;
-     font-family: 'Orelega One', cursive;
-     font-family: 'Prata', serif;
-     
-       }
-
-
-.featured-title{
-  margin-top: 12%;
-  text-align: center;
-  height: 6rem;
-  margin-left: 29%;
-  justify-content: center;
-  border: solid #570f17;
-}
-
-.featured-title > h2{
-  font-size: 5rem;
-  color:#570f17;
-
-}
-
-
-.card{
-  color: black;
-  height: 90%;
-  width: 70%;
-  margin-left: 15%;
-  border:solid #570f17;
-}
-
-
-
-.card-title{
-  margin-top: .5rem;
-  font-size: 3rem;
-  background-color: pink;
-  width: 100%;
-  border: solid #570f17;
-  color: black;
-  font-style: italic;
+     margin-bottom: 0px; */
+     background: white!important;
    }
 
-.card-salon{
-  font-size: 2rem;
-  font-weight: bold;
+   .footer .ml-3, .mx-3 {
+    margin-left: 0.5rem!important;
+    border-radius: 100px!important;
 }
-
-
-.col-xs-12{
-     margin-bottom: 2%;
-   }
-
-
    /*******REGISTER*********/
-
-.login1{
-  margin-top: 25%;
-  margin-left: 45%;
-  font-size: medium;
+.register{
+  font-size: 25px;
+}
+.containerRegister{
+  background-color: #570f17;
 }
 
-
-
-/*.login1 > .container > span{
-color: black;
-font-family: 'Orelega One', cursive;
-font-family: 'Prata', serif;
-font-weight: bold;
-background-color: pink;
-font-size: 6rem;
-position: absolute;
-padding: 20px;
-margin-top: 1%;
-}*/
-
-
-
-/*span{
-  margin-top: 20%;
-    font-size: 30px;
-   
-  }*/
-
-  /*.form-group{
-    width: 100%;
-  }*/
-
-  .text{
-    font-size: 150%;
+  .reg-text{
+    margin: 20px 50px;
+    color: white;
   }
+
+
 
 
   hr {
@@ -344,16 +292,15 @@ margin-top: 1%;
 
 /* Set a style for all buttons */
 .button1 {
-  background-color: maroon;
+  background-color: #e95c1b;
   color: white;
   padding: 10px 15px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 20%;
-  border-radius: 10px;
+  border-radius: 20px;
   opacity: 0.9;
-  align-items: center;
 }
 
 button:hover {
@@ -365,11 +312,9 @@ button:hover {
 .button1{
 
   animation: animate 8s linear infinite;
-  font-family: 'Orelega One', cursive;
-font-family: 'Prata', serif;
-font-size: 2rem;
+  font-family: sans-serif;
   box-sizing: border-box;
-  background: linear-gradient(90deg, maroon, red, pink, lightpink);
+  background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
   background-size: 400%;
   /*border-radius: 40px;*/
   z-index: 1; 
@@ -385,7 +330,6 @@ font-size: 2rem;
    background-position: 400%;
   }
  }
- 
  .button:before {
   content: '';
   /*position: absolute;
@@ -401,13 +345,16 @@ font-size: 2rem;
   opacity: 0;
   transition: 0.5s;
  }
-
  .button:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
  }
 
+ .card-title{
+   color:black;
+   
+ }
  /* section{
   width: 100%;
   height:100vh;
@@ -421,49 +368,21 @@ font-size: 2rem;
 
 /**********  CARD ************/
 
-.card-foot{
-  border: solid #570f17;  
-  background-color: pink;
-  border-radius: 10px;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: 15px;
-  color: black;
-  font-size: 20px;
+.card-footer a{
+  background: #5d5d5d;
+
+  border-radius: 5px;
+
+  color: white;
+  
 }
 
+.card-title{
+  margin-top: 15%;
+  margin-bottom:0px;
+}
 
-/*.card-title{
-  margin-bottom: 10%;
-}*/
-
-
-.footer {
-  background: rgb(36, 31, 34);
-   color:white;
-   z-index: 2;
-   height: 15rem;
-   margin-top: 50rem;
-   width: 179rem;
-  }
-
- 
- .footer a {
-   text-decoration: none;
-   /*color: white;*/
-   font-size: 1rem;
- }
- 
- .footer a:hover{
-   text-decoration: none;
-   color: maroon;
-   cursor: pointer;
- 
- }
- 
- .footer p {
-   margin-bottom: 0;
-   font-size: 1.5rem;
- }
-
+.mar{
+  margin: 5px;
+}
   
